@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
+import Footer from '../Footer/Footer'
 import Home from '../Home/Index'
 import About from '../About/About'
 import Events from '../Events/Events'
@@ -20,6 +21,7 @@ export default function Routing() {
           <Route path="/food" element={<Food />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )
