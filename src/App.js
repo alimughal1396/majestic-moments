@@ -1,9 +1,9 @@
-import Navbar from './components/admin/navbar'
+import Routing from './components/User/Routing/Routing'
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Routing />
     </>
   );
 }
