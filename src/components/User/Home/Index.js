@@ -4,6 +4,7 @@ import MarqueeImage from '../Images/home-marquee.jpg'
 import BirthdayImage from '../Images/home-birthday.jpg'
 
 import { Link } from 'react-router-dom'
+import { Carousel } from 'react-bootstrap'
 
 import './Index.css'
 
@@ -11,7 +12,9 @@ export default function Index() {
     return (
         <>
             {/* Landing page banner */}
-            <img src={HomeBanner} alt="Banner Image" class="img-fluid custom-banner-img" />
+            <div class="banner">
+                <img src={HomeBanner} alt="Banner Image" class="img-fluid" />
+            </div>
 
             {/* Marquee Section  */}
             <div class="container">
@@ -22,7 +25,7 @@ export default function Index() {
                         <p className='mt-3'>if you’re looking for a place to celebrate your love in style, come on down to our Marquee with the golden theme. I promise you won’t regret it.</p>
 
                         <div class="d-flex">
-                            <Link class="btn btn-primary w-100" to="/events">Booking</Link>
+                            <Link class="btn btn-secondary w-100" to="/events">Booking</Link>
                         </div>
 
                     </div>
@@ -44,7 +47,7 @@ export default function Index() {
                             As a busy parent, it can be stressful trying to think of the perfect theme for your upcoming birthday party, but Magestic Moments has the solution to your problem, we have unique ideas and have multiple themes for your next birthday party and manage birthday event according to your desired budget.</p>
 
                         <div class="d-flex">
-                            <Link class="btn btn-primary w-100" to="/events">Booking</Link>
+                            <Link class="btn btn-secondary w-100" to="/events">Booking</Link>
                         </div>
 
                     </div>
