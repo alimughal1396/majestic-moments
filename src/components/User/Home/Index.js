@@ -4,7 +4,6 @@ import MarqueeImage from '../Images/home-marquee.jpg'
 import BirthdayImage from '../Images/home-birthday.jpg'
 
 import { Link } from 'react-router-dom'
-import { Carousel } from 'react-bootstrap'
 
 import './Index.css'
 
